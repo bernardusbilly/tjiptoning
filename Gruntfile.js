@@ -1,50 +1,44 @@
 module.exports = function(grunt) {
-	
 	grunt.initConfig({
-		less: {
-			core: {
-				src: 'build/less/design.less',
-				dest: 'build/css/design.css',
-			},
-			bootstrap: {
-				src: 'build/lib/bootstrap/less/bootstrap.less',
-				dest: 'build/css/bootstrap.css',
-			},
+		pkg: grunt.file.readJSON('package.json'),
+		sass: {
+			dist: {
+				files: {
+					'assets/css/style.css' : 'assets/sass/style.scss'
+				}
+			}
 		},
 		cssmin: {
-			core: {
-				src: 'build/css/design.css',
-				dest: 'build/css/design.min.css',
+			dist: {
+				src: 'assets/css/style.css',
+				dest: 'assets/css/style.min.css',
 			},
 		},
 		uglify: {
-			js: {
+			dist: {
 				files: {
-			        'build/js/script.min.js': ['build/js/script.js'],
+			        'assets/js/script.min.js': ['assets/js/script.js'],
 			    },	
 			},
 		},
 		watch: {
-			less: {
-			    files: ['build/less/*.less', 'build/less/pages/*.less'],
-			    tasks: ['less:core'],
+			css: {
+				files: ['assets/sass/*.scss','assets/sass/pages/*.scss'],
+				tasks: ['sass:dist']
 			},
 			cssmin: {
-				files: ['build/css/design.css'],
-				tasks: ['cssmin:core'],
+				files: ['assets/css/style.css'],
+				tasks: ['cssmin:dist']	
 			},
-			uglify: {
-				files: ['build/js/script.js'],
-				tasks: ['uglify'],
-			},
-		},
+			js: {
+				files: ['assets/js/script.js'],
+				tasks: ['uglify:dist']
+			}
+		}
 	});
-
-	grunt.registerTask('default', ['watch']);
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-
+	grunt.registerTask('default',['watch']);
 }

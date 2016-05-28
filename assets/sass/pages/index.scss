@@ -1,0 +1,221 @@
+body.index {
+
+	.introduction {
+		position: relative;
+		display: block;
+		height: 100vh; 
+		text-align: center;
+
+		.header-wrapper {
+			position: absolute;
+			top: 10vh;
+			left: 10vw;
+			text-align: left;
+
+			span {
+				display: block;
+			}
+			.header {
+				letter-spacing: 6px;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+			.sub-header {
+				color: $light-grey;
+				font-size: 14px;
+			}
+		}
+
+		.logo {
+			position: relative;
+			display: inline-block; 
+			width: 100px;
+			top: 50%; 
+			transform: translate3d(0, -50%, 0); 
+			font-size: 20px; 
+			color: #333333;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.service {
+		position: relative;
+		display: block;
+		margin-bottom: 20vh;
+		font-size: 14px;
+
+		.left-container {
+			position: relative;
+			display: inline-block;
+			left: 20vw;
+			width: 35vw;
+			text-align: right;
+			vertical-align: middle;
+			.header {
+				opacity: 0.1;
+				font-size: 80px;
+			}
+		}
+		.right-container {
+			position: relative;
+			display: inline-block;
+			left: 25vw;
+			width: 35vw;
+			vertical-align: middle;
+			overflow: hidden;
+
+			ul {
+				li {
+					margin: 10px 0;
+					visibility: hidden;
+					-webkit-transition-duration: 500ms;
+					-moz-transition-duration: 500ms;
+					-o-transition-duration: 500ms;
+					transition-duration: 500ms;
+				}
+			}
+		}
+	}
+
+	.history {
+		position: relative;
+		height: 900px;
+		text-align: center;
+		overflow: hidden;
+
+		.header {
+			opacity: 0.1;
+			font-size: 80px;
+		}
+		.timeline {
+			position: absolute;
+			z-index: -1;
+			left: calc(50% - 1px);
+			margin-top: 20px;
+			border-left: 2px solid $dark-grey;
+			height: 750px;
+		}
+		.year-indicator {
+			position: absolute;
+			z-index: -1;
+			left: calc(50% - 7px);
+			width: 14px;
+		}
+
+		.year-1958 {
+			margin-top: 50px;
+		}
+		.year-1975 {
+			margin-top: 180px;	
+		}
+		.year-1979 {
+			margin-top: 310px;	
+		}
+		.year-1989 {
+			margin-top: 440px;	
+		}
+		.year-1998 {
+			margin-top: 570px;	
+		}
+		.year-1999 {
+			margin-top: 700px;	
+		}
+		.wrapper-left, .wrapper-right {
+			visibility: hidden;
+			.header {
+				position: relative;
+				top: -12px;
+				font-size: 30px;
+			}
+		}
+		.wrapper-right {
+		    position: absolute;
+		    left: calc(50% + 20px);
+		    width: 30%;
+		    text-align: left;
+		}
+		.wrapper-left {
+			position: absolute;
+		    right: calc(50% + 20px);
+		    width: 30%;
+		    text-align: right;
+		}
+	}
+
+	.project {
+		margin-top: 200px;
+
+		.header {
+			position: relative;
+			display: inline-block;
+			left: 10vw;
+			opacity: 0.1;
+			font-size: 80px;
+		}
+		
+		.wrapper-project:nth-child(2) {
+			border-top: 1px solid $superlight-grey;
+		}
+		.wrapper-project {
+			position: relative;
+			padding: 80px 10vw;
+			border-bottom: 1px solid $superlight-grey;
+			background: linear-gradient(to right, $superlight-grey 34%, white 65%);
+			background-size: 300% 100%;
+    		background-position:right bottom;
+    		transition-duration: 1000ms;
+
+    		overflow: hidden;
+			&:hover {
+				transition-duration: 1000ms;
+				background-position:left bottom;
+			}
+
+			.project-header {
+				font-size: 20px;
+				visibility: hidden;
+			}
+			.project-sub-header {
+				color: $light-grey;
+				font-size: 12px;
+				visibility: hidden;
+				transition-delay: 200ms;
+			}
+			.project-preview {
+				position: absolute;
+				opacity: 0;
+				overflow: hidden;
+				top: 0;
+				left: calc(10vw + 220px);
+				width: 340px;
+				transition-delay: 200ms;
+				transition-duration: 500ms;
+			}
+		}
+	}
+
+	.footer {
+		position: relative;
+		padding-top: 60px;
+		height: 250px;
+		text-align: center;
+
+		.left-container, .right-container {
+			display: inline-block;
+			vertical-align: top;
+			width: 40vw;
+			color: $light-grey;
+
+			.header {
+				color: $dark-grey;
+				padding-bottom: 20px;
+			}
+		}
+		.copyright {
+			margin-top: 80px;
+			font-size: 14px;
+		}
+	}
+}
