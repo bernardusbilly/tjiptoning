@@ -49,14 +49,14 @@ body.index #introduction {
         text-transform: uppercase;
         padding: 0px 15px;
         letter-spacing: 3px;
-        background: linear-gradient(to right, #c8c8c8 30%, white 60%);
+        background: linear-gradient(to right, gainsboro 30%, white 60%);
         background-size: 300% 100%;
         background-position: right bottom;
         transition-duration: 1000ms;
         border-left: 1px solid #323232; }
         body.index #introduction .menu-container ul li:hover {
           background-position: left bottom;
-          transition-duration: 1000ms; }
+          transition-duration: 500ms; }
         body.index #introduction .menu-container ul li:first-child {
           border: none; }
 body.index #service {
@@ -148,12 +148,13 @@ body.index #project {
     opacity: 0.1;
     font-size: 80px; }
   body.index #project .wrapper-project:nth-child(2) {
-    border-top: 1px solid #c8c8c8; }
+    border-top: 1px solid gainsboro; }
   body.index #project .wrapper-project {
     position: relative;
     padding: 80px 10vw;
-    border-bottom: 1px solid #c8c8c8;
-    background: linear-gradient(to right, #c8c8c8 34%, white 65%);
+    border-bottom: 1px solid gainsboro;
+    text-align: center;
+    background: linear-gradient(to right, gainsboro 34%, white 65%);
     background-size: 300% 100%;
     background-position: right bottom;
     transition-duration: 1000ms;
@@ -168,13 +169,12 @@ body.index #project {
       color: #969696;
       font-size: 12px;
       visibility: hidden;
-      transition-delay: 200ms; }
+      animation-duration: 1200ms; }
     body.index #project .wrapper-project .project-preview {
       position: absolute;
       opacity: 0;
-      overflow: hidden;
       top: 0;
-      left: calc(10vw + 220px);
+      left: calc(50vw - 170px);
       width: 340px;
       transition-delay: 200ms;
       transition-duration: 500ms; }

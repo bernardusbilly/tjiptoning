@@ -54,14 +54,8 @@ var projectHeader = $('.wrapper-project .project-header').waypoint({
   handler: function(direction) {
   	$(this.element).css("visibility", "visible");
     $(this.element).addClass("animated fadeInLeft");
-  },
-  offset: "90%"
-})
-
-var projectHeader = $('.wrapper-project .project-sub-header').waypoint({
-  handler: function(direction) {
-  	$(this.element).css("visibility", "visible");
-    $(this.element).addClass("animated fadeInLeft");
+    $(this.element).next().css("visibility", "visible");
+    $(this.element).next().addClass("animated fadeInLeft");
   },
   offset: "90%"
 })

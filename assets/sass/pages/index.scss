@@ -66,9 +66,10 @@ body.index {
 		    		background-position:right bottom;
 		    		transition-duration: 1000ms;
 		    		border-left: 1px solid $dark-grey;
+
 		    		&:hover {
 		    			background-position: left bottom;
-		    			transition-duration: 1000ms;
+		    			transition-duration: 500ms;
 		    		}
 		    		&:first-child {
 		    			border: none;
@@ -203,6 +204,7 @@ body.index {
 			position: relative;
 			padding: 80px 10vw;
 			border-bottom: 1px solid $superlight-grey;
+			text-align: center;
 			background: linear-gradient(to right, $superlight-grey 34%, white 65%);
 			background-size: 300% 100%;
     		background-position:right bottom;
@@ -222,14 +224,13 @@ body.index {
 				color: $light-grey;
 				font-size: 12px;
 				visibility: hidden;
-				transition-delay: 200ms;
+				animation-duration: 1200ms;
 			}
 			.project-preview {
 				position: absolute;
 				opacity: 0;
-				overflow: hidden;
 				top: 0;
-				left: calc(10vw + 220px);
+				left: calc(50vw - 170px);
 				width: 340px;
 				transition-delay: 200ms;
 				transition-duration: 500ms;
