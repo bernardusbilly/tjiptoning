@@ -1,7 +1,14 @@
 body.career {
+
+	background: url("../img/career.jpg");
+	background-size: cover;
+	background-position: top center;
+
 	.form-container {
 		display: inline-block;
 		position: absolute;
+		padding: 50px;
+		background: rgba(255,255,255,0.8);
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -20,6 +27,7 @@ body.career {
 				cursor: pointer;
 				color: white;
 				&:hover {
+					transition: border 0s;
 					background-color: grey;
 				}
 			}

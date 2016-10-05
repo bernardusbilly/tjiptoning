@@ -197,25 +197,32 @@ body.index #footer {
     margin-top: 80px;
     font-size: 14px; }
 
-body.career .form-container {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  body.career .form-container form input {
-    width: 300px;
-    padding: 18px 26px;
-    border: 1px solid lightgrey;
-    margin-bottom: 10px; }
-    body.career .form-container form input:hover {
-      border: 1px solid grey;
-      transition: border 1s; }
-  body.career .form-container form input[type="submit"] {
-    cursor: pointer;
-    color: white; }
-    body.career .form-container form input[type="submit"]:hover {
-      background-color: grey; }
+body.career {
+  background: url("../img/career.jpg");
+  background-size: cover;
+  background-position: top center; }
+  body.career .form-container {
+    display: inline-block;
+    position: absolute;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    body.career .form-container form input {
+      width: 300px;
+      padding: 18px 26px;
+      border: 1px solid lightgrey;
+      margin-bottom: 10px; }
+      body.career .form-container form input:hover {
+        border: 1px solid grey;
+        transition: border 1s; }
+    body.career .form-container form input[type="submit"] {
+      cursor: pointer;
+      color: white; }
+      body.career .form-container form input[type="submit"]:hover {
+        transition: border 0s;
+        background-color: grey; }
 
 html {
   font-family: 'Abel', sans-serif; }
