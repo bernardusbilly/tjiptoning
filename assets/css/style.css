@@ -92,7 +92,7 @@ body.index #service {
       transition-duration: 500ms; }
 body.index #history {
   position: relative;
-  height: 900px;
+  height: 1030px;
   text-align: center;
   overflow: hidden; }
   body.index #history .header {
@@ -104,7 +104,7 @@ body.index #history {
     left: calc(50% - 1px);
     margin-top: 20px;
     border-left: 2px solid #323232;
-    height: 750px; }
+    height: 880px; }
   body.index #history .year-indicator {
     position: absolute;
     z-index: -1;
@@ -123,6 +123,8 @@ body.index #history {
     margin-top: 570px; }
   body.index #history .year-1999 {
     margin-top: 700px; }
+  body.index #history .year-2014 {
+    margin-top: 830px; }
   body.index #history .wrapper-left, body.index #history .wrapper-right {
     visibility: hidden; }
     body.index #history .wrapper-left .header, body.index #history .wrapper-right .header {
@@ -194,6 +196,26 @@ body.index #footer {
   body.index #footer .copyright {
     margin-top: 80px;
     font-size: 14px; }
+
+body.career .form-container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  body.career .form-container form input {
+    width: 300px;
+    padding: 18px 26px;
+    border: 1px solid lightgrey;
+    margin-bottom: 10px; }
+    body.career .form-container form input:hover {
+      border: 1px solid grey;
+      transition: border 1s; }
+  body.career .form-container form input[type="submit"] {
+    cursor: pointer;
+    color: white; }
+    body.career .form-container form input[type="submit"]:hover {
+      background-color: grey; }
 
 html {
   font-family: 'Abel', sans-serif; }

@@ -122,7 +122,7 @@ body.index {
 
 	#history {
 		position: relative;
-		height: 900px;
+		height: 1030px;
 		text-align: center;
 		overflow: hidden;
 
@@ -136,7 +136,7 @@ body.index {
 			left: calc(50% - 1px);
 			margin-top: 20px;
 			border-left: 2px solid $dark-grey;
-			height: 750px;
+			height: 880px;
 		}
 		.year-indicator {
 			position: absolute;
@@ -163,6 +163,9 @@ body.index {
 		}
 		.year-1999 {
 			margin-top: 700px;	
+		}
+		.year-2014 {
+			margin-top: 830px;	
 		}
 		.wrapper-left, .wrapper-right {
 			visibility: hidden;
