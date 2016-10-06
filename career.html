@@ -12,10 +12,14 @@
 <div class="form-container">	
 	<form action="http://formspree.io/recruit.tjiptoning@gmail.com" method="POST">
 		<h3> Careers in Tjiptoning Sejati </h3>
-	    <input type="text" name="Full Name" placeholder="FirstName LastName" required><br>
-	    <input type="email" name="Email" placeholder="youremail@email.com" required><br>
-	    <input type="text" name="Major" placeholder="Civil Engineering" require><br>
-	    <input type="text" name="GPA" placeholder="3.0"><br>
+		<label for="name"> Full Name </label>
+	    <input id="name" type="text" name="Full Name" placeholder="FirstName LastName" required><br>
+	    <label for="email"> Email </label>
+	    <input id="email" type="email" name="Email" placeholder="youremail@email.com" required><br>
+	    <label for="major"> Major </label>
+	    <input id="major" type="text" name="Major" placeholder="Civil Engineering" require><br>
+	    <label for="gpa"> GPA </label>
+	    <input id="gpa" type="text" name="GPA" placeholder="3.1"><br>
 	    <input type="submit" value="Send your application">
 	</form>
 </div>

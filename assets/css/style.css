@@ -204,25 +204,29 @@ body.career {
   body.career .form-container {
     display: inline-block;
     position: absolute;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.7);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    body.career .form-container form label {
+      display: block;
+      font-size: 12px; }
     body.career .form-container form input {
       width: 300px;
-      padding: 18px 26px;
+      padding: 14px 22px;
       border: 1px solid lightgrey;
       margin-bottom: 10px; }
       body.career .form-container form input:hover {
-        border: 1px solid grey;
-        transition: border 1s; }
+        border: 1px solid grey; }
     body.career .form-container form input[type="submit"] {
       cursor: pointer;
-      color: white; }
+      color: white;
+      background-color: grey;
+      border: 1px solid grey;
+      margin-top: 20px; }
       body.career .form-container form input[type="submit"]:hover {
-        transition: border 0s;
-        background-color: grey; }
+        background-color: darkslategrey; }
 
 html {
   font-family: 'Abel', sans-serif; }
